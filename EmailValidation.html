@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>lbmfbflb</title>
+</head>
+<body>
+<form name="forms" method="POST" action="#" >
+<input type="email" name="email"placeholder="Enter Email">
+<input type="submit" value="send"onclick="Validate()">
+</form>
+
+<script>
+
+function Validate()
+{ var eformat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  // if(point.value.match(eformat))
+v=document.forms.email.value;
+
+   if(v==null||v==""){alert("Email space empty"); return false;}
+  else if(v.match(eformat))
+  { alert("Email is correct");document.forms.email.focus();return true; }
+}
+
+</script>
+</body>
+</html>
